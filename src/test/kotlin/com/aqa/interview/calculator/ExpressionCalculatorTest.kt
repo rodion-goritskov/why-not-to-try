@@ -1,7 +1,7 @@
 package com.aqa.interview.calculator
 
-import kotlin.test.Test
-import kotlin.test.assertEquals
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Test
 
 class ExpressionCalculatorTest {
 

@@ -7,7 +7,7 @@ repositories {
 }
 
 dependencies {
-    testImplementation(kotlin("test"))
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:6.0.3")
 }
 
 kotlin {
