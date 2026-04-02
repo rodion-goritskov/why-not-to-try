@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.aqa.interview.calculator.BootstrapSmokeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-04-02T14:20:03.752Z" hostname="Rodions-MacBook-Pro.local" time="0.025">
-  <properties/>
-  <testcase name="calculator bootstrap reflects environment()" classname="com.aqa.interview.calculator.BootstrapSmokeTest" time="0.025"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
