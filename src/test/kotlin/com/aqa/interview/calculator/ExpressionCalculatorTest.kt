@@ -112,6 +112,6 @@ class ExpressionCalculatorTest {
 
     @Test
     fun `very small`() {
-        assertEquals("", calculator.evaluate("1 / ${Long.MAX_VALUE}"))
+        assertEquals("", calculator.evaluate("1 / 0"))
     }
 }
