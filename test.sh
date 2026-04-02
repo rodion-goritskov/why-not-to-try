@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-./gradlew test --info "$@"
+./gradlew --info test "$@"
