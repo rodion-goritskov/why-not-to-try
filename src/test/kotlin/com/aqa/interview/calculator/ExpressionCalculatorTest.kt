@@ -100,4 +100,9 @@ class ExpressionCalculatorTest {
         assertEquals("-9.7", calculator.evaluate("-10 + 0.1 + 0.1 + 0.1"))
     }
 
+    @Test
+    fun alloperations() {
+        assertEquals("72", "-3 + 100 - (2.5 * (100 / -10))")
+    }
+
 }
