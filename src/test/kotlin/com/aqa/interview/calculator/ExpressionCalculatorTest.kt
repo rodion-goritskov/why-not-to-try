@@ -101,7 +101,6 @@ class ExpressionCalculatorTest {
     }
 
     @Test
-    @Disabled
     fun alloperations() {
         assertEquals("72", calculator.evaluate("-3 + 100 - (2.5 * (100 / -10))"))
     }
@@ -111,4 +110,8 @@ class ExpressionCalculatorTest {
         assertEquals("-25", calculator.evaluate("(2.5 * (100 / -10))"))
     }
 
+    @Test
+    fun `very small`() {
+        assertEquals("", calculator.evaluate("1 / ${Long.MAX_VALUE}"))
+    }
 }
