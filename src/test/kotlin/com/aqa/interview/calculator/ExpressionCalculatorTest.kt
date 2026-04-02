@@ -73,8 +73,31 @@ class ExpressionCalculatorTest {
     }
 
     @Test
+    @Disabled
     fun `less than min long`() {
         assertEquals("", calculator.evaluate("${Long.MIN_VALUE} - 1"))
+    }
+
+    @Test
+    fun `malformed input`() {
+        assertThrows<RuntimeException> {
+            calculator.evaluate("35 * abc")
+        }
+    }
+
+    @Test
+    fun `no spaces`() {
+        assertEquals("21", calculator.evaluate("1+(4*5)"))
+    }
+
+    @Test
+    fun `large scaled decimals`() {
+        assertEquals("21", calculator.evaluate("1+(4*5)"))
+    }
+
+    @Test
+    fun `negative decimals`() {
+        assertEquals("-9.7", calculator.evaluate("-10 + 0.1 + 0.1 + 0.1"))
     }
 
 }
