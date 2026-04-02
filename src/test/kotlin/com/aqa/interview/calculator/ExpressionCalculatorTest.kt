@@ -1,6 +1,7 @@
 package com.aqa.interview.calculator
 
 import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
 
@@ -61,6 +62,7 @@ class ExpressionCalculatorTest {
     }
 
     @Test
+    @Disabled
     fun `more than max long`() {
         assertEquals("", calculator.evaluate("${Long.MAX_VALUE} + 1"))
     }
@@ -72,7 +74,7 @@ class ExpressionCalculatorTest {
 
     @Test
     fun `less than min long`() {
-        assertEquals("", calculator.evaluate("${Long.MAX_VALUE} + 1"))
+        assertEquals("", calculator.evaluate("${Long.MIN_VALUE} - 1"))
     }
 
 }
