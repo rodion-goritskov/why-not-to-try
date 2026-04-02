@@ -2,9 +2,9 @@ package com.aqa.interview.calculator
 
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.assertThrows
 
 class ExpressionCalculatorTest {
-
     private val calculator = calculator()
 
     @Test
@@ -49,7 +49,10 @@ class ExpressionCalculatorTest {
 
     @Test
     fun `empty request`() {
-        assertEquals("", calculator.evaluate(""))
+        val exception = assertThrows<RuntimeException> {
+            calculator.evaluate("")
+        }
+        assertEquals(exception.message, "Expression must not be blank.")
     }
 
     @Test
